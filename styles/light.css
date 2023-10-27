@@ -9,4 +9,44 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
+  /* Цвета */
+  --bg-color: #fff1f7;
+  --bg-image-color: #9e9ea3;
+  --main-color: #ff8dcb;
+  --header-color: #353430;
+  --header-paragraph-text-color: #353430;
+  --section-heading-text-color: #353430;
+  --card-title-text-color: #353430;
+  --text-color: #353430;
+  --text-header-color: #ffc2e6;
+  --text-footer-color: #ffc2e6;
+  /* Изображения */
+  --bg-image: url(../images/cover-image-light.png);
+}
+
+.page.theme_light .pseudo-element {
+  display: none;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    /* Дублируем переменные светлой темы */  
+    /* Цвета */  
+    --bg-color: #fff1f7;
+    --bg-image-color: #9e9ea3;
+    --main-color: #ff8dcb;
+    --header-color: #353430;
+    --header-paragraph-text-color: #353430;
+    --section-heading-text-color: #353430;
+    --card-title-text-color: #353430;
+    --text-color: #353430;
+    --text-header-color: #ffc2e6;
+    --text-footer-color: #ffc2e6;
+    /* Изображения */
+    --bg-image: url(../images/cover-image-light.png);
+  }
+
+  .pseudo-element {
+    display: none;
+  }
 }
