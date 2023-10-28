@@ -9,4 +9,22 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
+  /* Цвета */
+  --bg-color: #000028;
+  --bg-image-color: #383847;
+  --main-color: #ff0070;
+  --title-color: #ff0070;
+  --header-paragraph-text-color: #000028;
+  --section-heading-text-color: #ff0070;
+  --card-title-text-color: #000028;
+  --text-color: #f1b2ce;
+  --text-header-color: #db00ff;
+  --text-footer-color: #db00ff;
+  --menu-button-outline-hover-color: rgba(255, 0, 112, 0.40);
+  /* Изображения */
+  --bg-image: url(../images/cover-image-dark.png);
+}
+
+.page.theme_dark .pseudo-element {
+  display: block;
 }
