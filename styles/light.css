@@ -30,6 +30,7 @@
 
 @media (prefers-color-scheme: light) {
   :root {
+    
     /* Дублируем переменные светлой темы */  
     /* Цвета */  
     --bg-color: #fff1f7;
