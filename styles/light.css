@@ -29,12 +29,8 @@
 }
 
 @media (prefers-color-scheme: light) {
-  .pseudo-element {
-    display: none;
-  }
-  
+  /* Дублируем переменные светлой темы */
   :root {
-    /* Дублируем переменные светлой темы */  
     /* Цвета */  
     --bg-color: #fff1f7;
     --bg-image-color: #9e9ea3;
@@ -48,5 +44,9 @@
     --text-footer-color: #ffc2e6;
     /* Изображения */
     --bg-image: url(../images/cover-image-light.png);
+  }
+
+  .pseudo-element {
+    display: none;
   }
 }
