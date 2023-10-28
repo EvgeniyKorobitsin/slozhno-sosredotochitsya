@@ -18,22 +18,13 @@
   font-weight: 400;
 }
 
-.header,
-.footer {
-  padding: var(--padding, 10px);
-  color: var(--header-color, #ff0070);
-}
-
-.content,
-.footer {
-  margin-block-start: var(--page-elements-offset, 40px);
-}
-
 .header {
   position: relative;
   display: grid;
   grid-template-rows: 1fr auto 1fr;
   align-items: center;
+  padding: var(--padding, 10px);
+  color: var(--title-color, #ff0070);
 }
 
 .decorated-zone {
@@ -66,7 +57,6 @@
 
 .pseudo-element {
   --circle-size: 9px;
-  /* --offset: calc(var(--padding) + (25px - var(--circle-size)) / 2); */
   --offset: calc(var(--padding, 10px) + 7.5px);
   content: '';
   position: absolute;
@@ -84,9 +74,9 @@
 .pseudo-element::before {
   content: 'rec';
   position: absolute;
+  text-transform: uppercase;
   inset-block-start: -9px;
   inset-inline-end: 19px;
-  text-transform: uppercase;
 }
 
 .header__theme-menu {
@@ -129,7 +119,7 @@
 }
 
 a:hover {
-  text-decoration: underline;
+  border-block-end: 1px solid currentColor;
 }
 
 a:focus-visible {
@@ -160,6 +150,7 @@ a:focus-visible {
   display: flex;
   flex-direction: column;
   gap: var(--content-grid-gap, 50px);
+  margin-block-start: var(--page-elements-offset, 40px);
   padding: 0;
   color: var(--text-color, #f1b2ce);
 }
@@ -172,7 +163,7 @@ a:focus-visible {
 }
 
 .section-img {
-  gap: 10px;
+  gap: var(--section-img-gap);
 }
 
 .section__heading {
@@ -205,7 +196,8 @@ a:focus-visible {
 
 .gallery {
   display: grid;
-  gap: 10px;
+  /* gap: 10px; */
+  gap: var(--section-img-gap);
 }
 
 .gallery__image {
@@ -220,6 +212,9 @@ a:focus-visible {
   position: relative;
   display: grid;
   justify-content: center;
+  margin-block-start: var(--page-elements-offset, 40px);
+  padding: var(--padding, 10px);
+  color: var(--title-color, #ff0070);
 }
 
 .footer__text {
@@ -231,12 +226,7 @@ a:focus-visible {
   text-shadow: 2px 2px 0px var(--accent-color, #ff0070);
 }
 
-
 @media (width >= 768px) {
-  :root {
-    --content-grid-gap: 80px;
-  }
-
   .header {
     padding-inline-start: 0;
   }
@@ -287,11 +277,6 @@ a:focus-visible {
   .gallery__image:nth-child(5) {
     grid-column: 2 / -1;
     grid-row: 3 / -1;
-  }
-
-  .section-img,
-  .gallery {
-    gap: 20px;
   }
 }
 
