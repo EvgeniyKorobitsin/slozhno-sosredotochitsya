@@ -24,14 +24,10 @@
   --bg-image: url(../images/cover-image-light.png);
 }
 
-.page.theme_light .pseudo-element {
-  display: none;
-}
-
+/* Дублируем переменные светлой темы */
 @media (prefers-color-scheme: light) {
-  /* Дублируем переменные светлой темы */
   :root {
-    /* Цвета */  
+ 
     --bg-color: #fff1f7;
     --bg-image-color: #9e9ea3;
     --main-color: #ff8dcb;
@@ -49,4 +45,8 @@
   .pseudo-element {
     display: none;
   }
+}
+
+.page.theme_light .pseudo-element {
+  display: none;
 }
