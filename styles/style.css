@@ -107,15 +107,12 @@
 .header__theme-menu-button:hover {
   border: none;
   cursor: pointer;
-}
-
-.header__theme-menu-button_active,
-.header__theme-menu-button:hover {
-  outline: 1px solid currentColor;
+  outline: 1px solid var(--menu-button-outline-hover-color);
 }
 
 .header__theme-menu-button_active {
   pointer-events: none;
+  outline: 1px solid currentColor;
 }
 
 a:hover {

@@ -20,6 +20,7 @@
   --text-color: #f1b2ce;
   --text-header-color: #db00ff;
   --text-footer-color: #db00ff;
+  --menu-button-outline-hover-color: rgba(255, 0, 112, 0.40);
   /* Изображения */
   --bg-image: url(../images/cover-image-dark.png);
 }

@@ -20,6 +20,7 @@
   --text-color: #353430;
   --text-header-color: #ffc2e6;
   --text-footer-color: #ffc2e6;
+  --menu-button-outline-hover-color: rgba(50, 49, 45, 0.40);
   /* Изображения */
   --bg-image: url(../images/cover-image-light.png);
 }
@@ -38,6 +39,7 @@
     --text-color: #353430;
     --text-header-color: #ffc2e6;
     --text-footer-color: #ffc2e6;
+    --menu-button-outline-hover-color: rgba(50, 49, 45, 0.40);
     /* Изображения */
     --bg-image: url(../images/cover-image-light.png);
   }
